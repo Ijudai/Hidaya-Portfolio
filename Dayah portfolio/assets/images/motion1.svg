@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="motionGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A050B"/>
+      <stop offset="50%" stop-color="#E60023"/>
+      <stop offset="100%" stop-color="#0A0A0F"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#motionGrad1)"/>
+  
+  <!-- Abstract 3D Motion Graphic Wave / Ribbons -->
+  <path d="M -100 360 Q 320 100 640 360 T 1380 360" fill="none" stroke="#FF2E55" stroke-width="40" opacity="0.8" filter="url(#glow)"/>
+  <path d="M -100 420 Q 320 600 640 420 T 1380 420" fill="none" stroke="#FFFFFF" stroke-width="16" opacity="0.9"/>
+  <circle cx="640" cy="360" r="180" fill="rgba(0,0,0,0.5)" stroke="#FF2E55" stroke-width="4"/>
+
+  <!-- Play Icon Center Overlay -->
+  <circle cx="640" cy="360" r="60" fill="#E60023" filter="url(#glow)"/>
+  <polygon points="625,335 670,360 625,385" fill="#FFFFFF"/>
+  
+  <!-- Text Elements -->
+  <text x="70" y="100" font-family="'Syne', sans-serif" font-weight="900" font-size="44" fill="#FFFFFF" letter-spacing="2">KINETIC TYPOGRAPHY &amp; 3D REEL</text>
+  <text x="70" y="145" font-family="sans-serif" font-weight="600" font-size="20" fill="#FF2E55" letter-spacing="4">MOTION GRAPHICS DESIGN // WORK 01</text>
+  
+  <rect x="70" y="620" width="220" height="40" rx="20" fill="rgba(255,255,255,0.15)"/>
+  <text x="180" y="646" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">CLICK TO PLAY MOTION WORK</text>
+</svg>
